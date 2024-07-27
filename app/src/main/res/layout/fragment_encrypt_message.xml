@@ -7,93 +7,100 @@
     android:padding="16dp"
     android:background="@android:color/white">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/et_string"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter message"
-            android:padding="12dp"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/darker_gray"
-            android:textSize="16sp"
-            android:layout_marginBottom="16dp"/>
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp">
 
-<!--        <EditText-->
-<!--            android:id="@+id/et_key"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Enter Key"-->
-<!--            android:padding="12dp"-->
-<!--            android:textColor="@android:color/black"-->
-<!--            android:textColorHint="@android:color/darker_gray"-->
-<!--            android:textSize="16sp"-->
-<!--            android:layout_marginBottom="16dp"/>-->
+            <EditText
+                android:id="@+id/et_string"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter message"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
 
+        </LinearLayout>
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="16dp">
-
-        <Button
-            android:text="Encrypt"
-            android:id="@+id/btn_encrypt"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"/>
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp">
 
-        <Button
-            android:text="Decrypt"
-            android:id="@+id/btn_decrypt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"/>
+            <Button
+                android:text="Encrypt"
+                android:id="@+id/btn_encrypt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
 
-        <Button
-            android:text="Copy Message"
-            android:id="@+id/btn_copy_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"/>
+            <Button
+                android:text="Decrypt"
+                android:id="@+id/btn_decrypt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
 
-        <Button
-            android:text="Clear Message"
-            android:id="@+id/btn_clear_message_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"/>
+            <Button
+                android:text="Copy Message"
+                android:id="@+id/btn_copy_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
 
-    </LinearLayout>
+            <Button
+                android:text="Clear Message"
+                android:id="@+id/btn_clear_message_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
 
+            <!-- CardView Section inside NestedScrollView -->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        cardview:cardElevation="4dp"
-        cardview:cardCornerRadius="8dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    cardview:cardElevation="4dp"
+                    cardview:cardCornerRadius="8dp">
 
-        <TextView
-            android:id="@+id/tv_results"
-            android:textIsSelectable="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:textSize="18sp"
-            android:textColor="@android:color/black"/>
-    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tv_results"
+                        android:textIsSelectable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
