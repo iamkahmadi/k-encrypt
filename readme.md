@@ -12,9 +12,9 @@
 
 Here are some screenshots of the k-encrypt app:
 
-<img src="images/img_1.jpg" alt="Screenshot 1" width="360" height="640">
-<img src="images/img_2.jpg" alt="Screenshot 2" width="360" height="640">
-<img src="images/img_3.jpg" alt="Screenshot 3" width="360" height="640">
+<img src="images/img_1.jpg" alt="Screenshot 1" style="width:100%;height:100%;">
+<img src="images/img_2.jpg" alt="Screenshot 2" style="width:100%;height:100%;">
+<img src="images/img_3.jpg" alt="Screenshot 3" style="width:100%;height:100%;">
 
 ## Installation
 
