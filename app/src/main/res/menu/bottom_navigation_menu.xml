@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_encrypt_message"
+        android:icon="@drawable/ic_encrypt"
+        android:title="Encrypt Message" />
+
+    <item
+        android:id="@+id/navigation_secret_phrase"
+        android:icon="@drawable/ic_lock"
+        android:title="Secret Phrase" />
+
+</menu>
